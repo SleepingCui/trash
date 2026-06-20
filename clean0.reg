@@ -1,21 +1,17 @@
 Windows Registry Editor Version 5.00
 
-; 4. HKEY_CURRENT_USER 版本（如果之前用的是用户级注册）
 [-HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\background\shell\cmd_here]
 [-HKEY_CURRENT_USER\SOFTWARE\Classes\Folder\shell\cmdPrompt]
 [-HKEY_CURRENT_USER\SOFTWARE\Classes\Directory\shell\cmd_here]
 
-; 5. 清除可能存在的 "OpenCmdHere" 变体（改进版脚本留下的）
 [-HKEY_CLASSES_ROOT\Directory\Background\shell\OpenCmdHere]
 [-HKEY_CLASSES_ROOT\Directory\shell\OpenCmdHere]
 [-HKEY_CLASSES_ROOT\Drive\shell\OpenCmdHere]
 
-; 6. 清除可能存在的 "cmd" 或 "command" 其他变体
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\background\shell\cmd]
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Folder\shell\cmd]
 [-HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Directory\shell\cmd]
 
-; 删除 PowerShell 右键菜单项
 [-HKEY_CLASSES_ROOT\Directory\Background\shell\OpenPSHere]
 [-HKEY_CLASSES_ROOT\Directory\shell\OpenPSHere]
 [-HKEY_CLASSES_ROOT\Drive\shell\OpenPSHere]
